@@ -1,0 +1,98 @@
+*{
+font-family: 'Poppins', sans-serif; margin: 0;  padding: 0; box-sizing: border-box; scroll-padding-top: 2rem;
+list-style: none; text-decoration: none; scroll-behavior: smooth;
+
+}
+/*variables for colors */
+:root{
+    --main-color:#8B0000; --main-light-color:#FF4500;
+    --container-color:#f8f7fc; --text-color:#1a1d22;
+    --header:	#D3D3D3;--bg-color:#fff;
+}
+
+img{
+    width: 100%;  
+}
+body{
+    color: var(--text-color);
+}
+section{
+    padding: 4rem 0 2rem;
+}
+.container{
+    max-width: 938px;  margin-left: auto; margin-right: auto;
+}
+header{
+    display: block; width: 100%; position: fixed;background-color: var(--bg-color);
+    top: 0; left: 0; z-index: 100;
+}
+header.shadow{ /* Used to change color in js*/
+    background: var(--header);
+    box-shadow: 2px 2px 4px rgb(15 54 55/ 10%);
+    transition: 0.5s;
+}
+.nav{
+    display: flex; align-items: center; justify-content: space-between; padding: 1.25rem 0;
+
+}
+.logo{
+    font-size: 1.25rem; font-weight: 900;
+}
+.navbar{ display: flex; column-gap: 2rem;
+
+}
+.navbar a {
+    position: relative; color: var(--main-light-color); font-size: 1.5rem; font-weight: 900;
+}
+.navbar a:hover,
+.navbar .active{
+    color: var(--main-color);
+}
+.nav-icons{
+    display: flex; column-gap: 2rem;
+
+}
+.nav-icons .bx {
+    font-size: 1.5rem;  color: var(--main-color);  cursor: pointer;
+}
+.nav-icons .bx:hover {
+    color: var(--main-color);
+
+}
+#menu-icon{
+    display: none;
+}
+.cart{
+    position: relative;
+}
+.cart span{
+    position: absolute; display: flex; align-items: center; justify-content: center;
+    top: -0.625rem; right: -0.5rem; font-size: 0.8rem; height: 1rem; width: 1rem;
+    background: var(--main-color); border-radius: 50%;
+    padding: 4px;  color: var(--bg-color);
+}
+
+/*home*/
+.home{
+    max-width: 1300px; margin: auto; min-height: 640px; display: flex;
+    align-items: center; background: var(--container-color);
+}
+.home-container{
+    display:grid; grid-template-columns: repeat(2,1fr); align-items: center;
+    gap: 1.5rem;
+}
+.home-text h1{
+    font-size:2.4rem ;
+}
+.home-text p{
+    font-size:0.938rem ; margin: 0.5rem 0 1.4rem;
+}
+
+.btn{
+    padding: 0.813rem 1.625rem; background:var(--main-color); color: var(--bg-color);
+    font-weight: 400; border-radius: 0.5rem;
+    
+}
+.btn:hover{
+    background:var(--main-light-color);
+}
